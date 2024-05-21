@@ -1,0 +1,454 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f5ec;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 234, 221);
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    height: 60px; /* 根据提供的图像调整高度 */
+    position: relative;
+}
+
+.logo img {
+    height: 40px; /* 调整logo大小 */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7E7E77;
+    font-weight: bold;
+    padding: 10px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+nav a.active {
+    color: #21202C;
+    box-shadow: inset 0 -4px 0 #21202C, inset 0 -6px 5px -5px #21202C;
+    border-radius: 0 0 3px 3px;
+}
+
+
+nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 6px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    background-color: rgb(251 249 242);
+    border-radius: 5px; /* 圆弧背景 */
+}
+
+.user span {
+    margin-right: 10px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* 默认隐藏 */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.bridge {
+    width: 400px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bridge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bridge h1, .history {
+    margin: 0;
+}
+
+.history {
+    color: #888;
+    cursor: pointer;
+    font-size: small;
+}
+
+.bridge-form {
+    margin-top: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.from, .to {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chain {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.chain img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: #888;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.amount .token {
+    display: flex;
+    align-items: center;
+}
+
+.amount .token input {
+    width: 60px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total input {
+    width: calc(100% - 50px);
+    text-align: left;
+    padding-left: 5%;
+    background-color: transparent;
+    border: none;
+}
+
+
+.balance {
+    text-align: right;
+    margin-bottom: 10px;
+    background-color: rgb(251, 249, 242);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.trade {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.trade input {
+    margin-right: 10px;
+}
+
+#bridge-button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(238 234 221);
+    color: #fff;
+    cursor: not-allowed;
+}
+
+#bridge-button:enabled {
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+.fee {
+    text-align: right;
+    color: #888;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color:#5E5E5E;
+    font-size:14px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(238, 234, 221);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .user {
+        position: relative;
+    }
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #7E7E77;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+}
+
+nav a.active {
+    color: #21202C;
+    box-shadow: inset 0 -4px 0 #cbc4c9, inset 0 -6px 5px -5px #21202C;
+    border-radius: 0 0 3px 3px;
+}
+
+
+.user .menu-icon {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.main {
+    padding: 20px;
+}
+
+.bridge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bridge-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.bridge-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.from, .to {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1;
+}
+
+.chain {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chain img {
+    height: 40px;
+    width: 40px;
+}
+
+.chain div {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow {
+    margin: 0 20px;
+}
+
+.arrow img {
+    height: 10px;
+    width: 10px;
+}
+
+.bridge-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bridge-button {
+    background-color: #7E7E77;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+.bridge-button:hover {
+    background-color: #5E5E5E;
+}
+
+.fee {
+    color: #7E7E77;
+    padding-top: 5%;
+    font-size: small;
+}
+
+.user img {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px; /* 为了让图像和文本之间有一点间距 */
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(238, 234, 221);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    nav a {
+        padding: 10px 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-icon.active + nav {
+        display: flex;
+    }
+}
+
+
+.bridge-currencies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.currency {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currency img {
+    height: 20px;
+    width: 20px;
+}
+
+.currency span {
+    font-size: 16px;
+    color: #333;
+}
+
+.amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+.total-balance-container {
+    background-color: rgb(251, 249, 242);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label[for="trade"] {
+    font-size: 12px; /* 你可以根据需要调整这个值 */
+    color: #a19f9f;
+}
+
+
+.from label {
+    font-size: 12px; /* 根据需要调整这个值 */
+}
+
+.to label {
+    font-size: 12px; /* 根据需要调整这个值 */
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge - Stormswap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Stormswap Logo">
+        </div>
+        <nav>
+            <a id="deposit" class="nav-link">Deposit</a>
+            <a id="bridge" class="nav-link active">Bridge</a>
+            <a id="stake" class="nav-link">Stake</a>
+            <a id="farm" class="nav-link">Farm</a>
+        </nav>
+        <div class="user launch-soon">
+            <img src="images/connect.svg">
+            <span class="launch-soon"> Launch Soon</span>
+            <div class="menu-icon" id="menu-icon">≡</div>
+        </div>
+    </header>
+    <main>
+        <section class="bridge">
+            <div class="bridge-header">
+                <h1>Bridge</h1>
+                <div class="history">History</div>
+            </div>
+            <div class="bridge-form">
+                <div class="bridge-container">
+                    <div class="from">
+                        <div class="chain">
+                            <img src="images/bnb.svg" alt="BNB Chain">
+                            <div>
+                                <label>From</label>
+                                <span>BNB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img src="images/arrow.png" alt="Arrow">
+                    </div>
+                    <div class="to">
+                        <div class="chain">
+                            <img src="images/logo-image.png" alt="Storm">
+                            <div>
+                                <label>To</label>
+                                <span>Storm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bridge-currencies">
+                    <div class="currency">
+                        <img src="images/logo-image.png" alt="Bitcoin">
+                        <span>0</span>
+                    </div>
+                    <div class="currency">
+                        <img src="images/bnb.svg" alt="Dollar">
+                        <span>0</span>
+                    </div>
+                    <div class="currency">
+                        <img src="images/logo-image.png" alt="Bitcoin">
+                        <span>0</span>
+                    </div>
+                    <div class="currency">
+                        <img src="images/bnb.svg" alt="Dollar">
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="total-balance-container">
+                    <div class="total">
+                        <input type="number" value="0.00" readonly>
+                        <span>Storm</span>
+                    </div>
+                    <div class="balance">Balance: 0 Max</div>
+                </div>
+                <div class="trade">
+                    <input type="checkbox" id="trade">
+                    <label for="trade">Trade and Send to Another Address</label>
+                </div>
+                <button id="bridge-button" disabled>Bridge now</button>
+                <div class="fee">Bridge fee 0.01 BNB</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </footer>
+    <script src="bridge-script.js"></script>
+</body>
+</html>

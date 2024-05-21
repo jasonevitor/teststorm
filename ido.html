@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm IDO</title>
+    <link rel="stylesheet" href="styles_ido.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet"> <!-- 引入电子表字体 -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <button id="connectWalletButton">Connect Wallet</button>
+        <div id="walletAddress"></div>
+    </div>
+    <div class="upper-container">
+        <h2>STORM预售倒计时结束</h2>
+        <div id="countdownTimer"></div>
+        <div class="participation">
+            <h4>Mint 0.5BNB</h4>
+            <input type="number" id="purchaseQuantity" name="purchaseQuantity" step="1" min="1" placeholder="输入买入数量">
+            <button id="joinIDOButton">购买</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="inner-container">
+            <div class="countdown"></div>
+            <div class="phase-container">
+                <div class="phase">
+                    <h4>Phase 1</h4>
+                    <div class="phase-description">50 public communities, 0.5 BNB per person, 1 day (25 BNB)</div>
+                </div>
+                <div class="phase">
+                    <h4>Phase 2</h4>
+                    <div class="phase-description">100 public communities, 1 BNB per person, 1 day (100 BNB)</div>
+                </div>
+                <div class="phase">
+                    <h4>Phase 3</h4>
+                    <div class="phase-description">1000 public communities, 0.5 BNB per person, 1 day (500 BNB)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
