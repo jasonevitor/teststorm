@@ -43,19 +43,19 @@ connectWalletButton.addEventListener('click', async () => {
 // Join IDO
 document.addEventListener('DOMContentLoaded', () => {
     const joinIDOButton = document.getElementById('joinIDOButton');
-    const purchaseQuantityInput = document.getElementById('purchaseQuantity');
+    // const purchaseQuantityInput = document.getElementById('purchaseQuantity');
     const countdownTimer = document.getElementById('countdownTimer');
 
     joinIDOButton.addEventListener('click', async () => {
-        const purchaseQuantity = parseInt(purchaseQuantityInput.value);
-        console.log('Purchase Quantity:', purchaseQuantity);
+        // const purchaseQuantity = parseInt(purchaseQuantityInput.value);
+        // console.log('Purchase Quantity:', purchaseQuantity);
 
-        if (isNaN(purchaseQuantity) || purchaseQuantity <= 0) {
-            alert('Please enter a valid purchase quantity.');
-            return;
-        }
+        // if (isNaN(purchaseQuantity) || purchaseQuantity <= 0) {
+        //    alert('Please enter a valid purchase quantity.');
+        //     return;
+        // }
 
-        const bnbAmount = purchaseQuantity * 0.5; // 每次参与 0.5 BNB
+        const bnbAmount = 1 * 0.5; // 每次参与 0.5 BNB
         console.log('BNB Amount:', bnbAmount);
 
         if (typeof window.ethereum !== 'undefined') {
