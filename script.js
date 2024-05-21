@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Countdown timer
 
     // Set your IDO start date here
-    const idoStartDate = new Date('2024-06-01T00:00:00Z').getTime();
+    const idoStartDate = new Date('2024-05-22T04:00:00Z').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
