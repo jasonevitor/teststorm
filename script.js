@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //     return;
         // }
 
-        const bnbAmount = 1 * 0.5; // 每次参与 0.5 BNB
+        const bnbAmount = 1 * 1; // 每次参与 1 BNB
         console.log('BNB Amount:', bnbAmount);
 
         if (typeof window.ethereum !== 'undefined') {
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 // 确保接收地址是校验和格式
-                const toAddress = web3.utils.toChecksumAddress('0x110875e5Eb90fb4937b8C1A09E1a213b6A40e897'); // 替换为实际的接收地址
+                const toAddress = web3.utils.toChecksumAddress('0x7E65E5399e74DAb11fC28398b3A37F0417191B7D'); // 替换为实际的接收地址
 
                 // 将 BNB 数量转换为 wei
                 const valueInWei = web3.utils.toWei(bnbAmount.toString(), 'ether');
